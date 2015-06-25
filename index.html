@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <!-- Load angular and local JS script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <title>Tree adventures</title>
+</head>
+
+<body ng-app="treeWalker" >
+    <div ng-controller="treeController">
+
+        <recursive-tree node="tree"></recursive-tree>
+        <br>
+        <button ng-click="fillData()" class="button">Fill temp data</button> <br>
+        <button ng-click="saveState()" class="button">SaveState</button> <br>
+        <button ng-click="loadState()" class="button">LoadState</button> <br><br><br>
+    </div>
+</body>
+</html>
